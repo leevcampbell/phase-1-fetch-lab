@@ -1,5 +1,17 @@
+/*fetch("https://anapioficeandfire.com/api/books")
+.then(response => response.json())
+.then(books => books.forEach(book => {
+  renderBooks()
+}))*/
+
+
 function fetchBooks() {
   // To pass the tests, don't forget to return your fetch!
+  fetch("https://anapioficeandfire.com/api/books")
+.then(response => response.json())
+.then(books => books.forEach(book => {
+  renderBooks(books)
+}))
   
 }
 
